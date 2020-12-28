@@ -1,0 +1,5 @@
+{
+    "name": "Webhook Deployment Trigger",
+    "description": "Trigger deployment via a webhook",
+    "iconName": "Cert_no_bg_stencil"
+}
