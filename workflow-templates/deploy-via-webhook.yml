@@ -26,7 +26,7 @@ jobs:
       - run: |
           pip install requests
           wget https://raw.githubusercontent.com/c3CERT/.github/main/workflow-templates/deploy-webhook.py
-      - run: python webhook.py
+      - run: python deploy-webhook.py
         env:
           url: ${{ secrets.DEPLOYMENT_URL }}
           payload: '{"repository": "${{ github.repository }}", "data": { "secret": "${{ secrets.DEPLOYMENT_KEY }}"}}'
